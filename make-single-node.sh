@@ -9,7 +9,7 @@ sudo ln -s java-7-openjdk-amd64 jdk
 # Uncommment to install ssh 
 sudo apt-get install openssh-server
 
-# Add hadoop user
+# Add hadoop user	
 sudo addgroup hadoop
 sudo adduser --ingroup hadoop hduser
 sudo adduser hduser sudo
@@ -17,6 +17,7 @@ sudo adduser hduser sudo
 # Generate keys
 sudo -u hduser ssh-keygen -t rsa -P ''
 sudo sh -c 'cat /home/hduser/.ssh/id_rsa.pub >> /home/hduser/.ssh/authorized_keys'
+sudo sh -c 'chown hduser /home/hduser/.ssh/authorized_keys'
 #ssh localhost
 
 # Download Hadoop and set permissons
