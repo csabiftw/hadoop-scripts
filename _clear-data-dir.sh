@@ -1,0 +1,7 @@
+ssh master "rm -R ~/mydata/hdfs;mkdir ~/mydata/hdfs;mkdir ~/mydata/hdfs/namenode;mkdir ~/mydata/hdfs/datanode;ls mydata/hdfs/;"
+ssh slave1 "rm -R ~/mydata/hdfs;mkdir ~/mydata/hdfs;mkdir ~/mydata/hdfs/namenode;mkdir ~/mydata/hdfs/datanode;ls mydata/hdfs/;"
+ssh slave2 "rm -R ~/mydata/hdfs;mkdir ~/mydata/hdfs;mkdir ~/mydata/hdfs/namenode;mkdir ~/mydata/hdfs/datanode;ls mydata/hdfs/;"
+ssh slave3 "rm -R ~/mydata/hdfs;mkdir ~/mydata/hdfs;mkdir ~/mydata/hdfs/namenode;mkdir ~/mydata/hdfs/datanode;ls mydata/hdfs/;"
+ssh slave4 "rm -R ~/mydata/hdfs;mkdir ~/mydata/hdfs;mkdir ~/mydata/hdfs/namenode;mkdir ~/mydata/hdfs/datanode;ls mydata/hdfs/;"
+ssh slave5 "rm -R ~/mydata/hdfs;mkdir ~/mydata/hdfs;mkdir ~/mydata/hdfs/namenode;mkdir ~/mydata/hdfs/datanode;ls mydata/hdfs/;"
+ssh slave6 "rm -R ~/mydata/hdfs;mkdir ~/mydata/hdfs;mkdir ~/mydata/hdfs/namenode;mkdir ~/mydata/hdfs/datanode;ls mydata/hdfs/;"
