@@ -17,3 +17,7 @@ After running make-single-node.sh, it configures this node to be the master, and
 ## make-slave.sh
 
 After running make-single-node.sh, this script sets up a slave.
+
+## _clear-data-dir.sh
+
+Empties the data and tmp directories. Useful when some previous configuration error corrupts the cluster. Run as hduser on the master.
