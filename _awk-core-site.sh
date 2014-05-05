@@ -1,0 +1,1 @@
+awk 'BEGIN{RS="</configuration>"}/<configuration>/{gsub(/<configuration>.*/,"<configuration><property><name>fs.default.name</name><value>hdfs://master:9000</value></property><property><name>hadoop.tmp.dir</name><value>/usr/local/hadoop/tmp</value></property></configuration>")}1' /usr/local/hadoop/etc/hadoop/core-site.xml > /usr/local/hadoop/etc/hadoop/core-site.xml
